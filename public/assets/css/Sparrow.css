@@ -1,0 +1,83 @@
+ 
+.wrapper {	
+	margin-top: 80px;
+	margin-bottom: 80px;
+}	
+
+.form-signin {
+	max-width: 380px;
+	padding: 15px 35px 45px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,0.1);   
+
+}
+.ul-alert{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none; 
+}
+ 
+ 
+
+/*=================================== navigation bar *****/
+
+nav{
+	background-color: #337ab7; 
+} 
+.ul-nav a{
+	text-decoration: none; 
+	color: #b4b8bf; 
+	font-size: 14px;
+}
+.ul-nav a:hover{
+	 color: white;
+}
+.ul-nav{
+	margin: 0px;
+	padding: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style-type: none; 
+} 
+.ul-nav li{
+	display: inline; 
+}
+  
+
+/*====================================================== Recyclable *********/
+
+
+/*===================== Align*/
+.align-center{
+	text-align: center;
+}
+/*===================== padding*/
+.pdg-t-sm{
+	padding-top: 20px;
+}
+
+.pdg-r-sm{
+	padding-right: 20px;
+}
+
+/*===================== font size*/
+.font-size-sm{
+	font-size: 12px;
+}
+
+
+/*===================== anchor*/
+.text-deco-none{
+	text-decoration: none;
+}
+
+/*===================== float*/
+.fr{
+	float: right;
+}
+
+/*===================== Color*/
+.c-white{
+	color:	white !important;
+} 
