@@ -72,7 +72,7 @@ class pagesController extends BaseController
 			if($this->request->getMethod() == 'post')
 			{
 				$rules = [
-	 				// 'email'				=>	'is_unique[tbl.email]',
+	 				'email'				=>	'is_unique[tbl_users.email]',
 	 				'password'			=>	'min_length[5]'	,
 	 				'password_confirm'	=>	'matches[password]'
 	 			];

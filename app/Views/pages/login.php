@@ -33,6 +33,20 @@
               </div> 
             </div>  
         <?php endif ?>  
+        <?php if (session()->get('illegal')): ?>
+           <div class="row">
+              <div class="col-sm-12 pdg-t-sm font-size-sm">
+                  <div class="alert alert-danger" role="alert">
+                    <ul class="ul-alert">
+                      <li>
+                          <?= session()->get('illegal'); ?>
+                      </li>
+                    </ul>
+                  </div>
+              </div> 
+            </div>  
+        <?php endif ?>  
+
 
          <?php if (isset($validation)): ?>
            <div class="row">

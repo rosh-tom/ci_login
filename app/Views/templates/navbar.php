@@ -8,9 +8,18 @@
           </li> 
 
         <?php if (session()->get('isLoggedIn')): ?>
-          <li class="">
+          <li class="pdg-r-sm">
             <a class="<?= ($uri->getSegment(1)=='dashboard' ? 'c-white' : null )?>" href="/dashboard">Dashboard</a>
           </li> 
+
+           <li class="pdg-r-sm"">
+            <a class="<?= ($uri->getSegment(1)=='profile' ? 'c-white' : null )?>" href="/profile">profile</a>
+          </li> 
+
+          <li class="">
+            <a class="<?= ($uri->getSegment(1)=='userlist' ? 'c-white' : null )?>" href="/userlist">List of Users</a>
+          </li> 
+
 
           <li class="fr">
             <a class="<?= ($uri->getSegment(1)=='logout' ? 'c-white' : null )?>" href="logout"> Logout </a>

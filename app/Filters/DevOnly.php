@@ -9,7 +9,7 @@ class DevOnly implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         $uri = service('uri');
-        if($uri->getSegment(1) == 'pagesController' || $uri->getSegment(1) == 'userController')
+        if($uri->getSegment(1) == 'pagesController' || $uri->getSegment(1) == 'userController' && $uri->getSegment(2) != 'delete' )
         {
           if($uri->getSegment(2) == '')
           {
