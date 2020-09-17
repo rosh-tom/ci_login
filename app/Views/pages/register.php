@@ -5,7 +5,7 @@
         <hr>
         <div class="row pdg-t-sm">
           <div class="col-sm-12">
-              <input type="text" class="form-control" name="firstname" placeholder="First Name" required="" value="<?= set_value('firstname') ?>" />
+              <input type="text" class="form-control" name="firstname" placeholder="First Name" required="" autofocus="" value="<?= set_value('firstname') ?>" />
           </div> 
         </div>
 

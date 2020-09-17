@@ -10,11 +10,17 @@ class Filters extends BaseConfig
 		'csrf'     => \CodeIgniter\Filters\CSRF::class,
 		'toolbar'  => \CodeIgniter\Filters\DebugToolbar::class,
 		'honeypot' => \CodeIgniter\Filters\Honeypot::class,
+		'auth'		=> \App\Filters\Loggedin::class,
+		'noauth'	=> \App\Filters\NotLoggedin::class,
+		'devonly'	=>	\App\Filters\DevOnly::class,
+
+
 	];
 
 	// Always applied before every request
 	public $globals = [
 		'before' => [
+			'devonly'
 			//'honeypot'
 			// 'csrf',
 		],
